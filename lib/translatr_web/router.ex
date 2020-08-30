@@ -15,7 +15,8 @@ defmodule TranslatrWeb.Router do
 
   scope "/", TranslatrWeb do
     pipe_through :browser
-
+    
+    resources "/posts", PostController
     get "/", PageController, :index
   end
 
